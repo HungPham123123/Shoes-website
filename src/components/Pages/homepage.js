@@ -445,11 +445,7 @@ function HomePage() {
                             <span className="month">AUG</span>
                         </div>
                         </div>
-                        <div className="blog-date">
-                            <span className="day">10</span>
-                            <hr/>
-                            <span className="month">AUG</span>
-                        </div>
+
                         <div className="homepage-blog-content">
                                 <a href="Shoes/blog.html" className="blog-cate">
                                     <h5>News</h5>
