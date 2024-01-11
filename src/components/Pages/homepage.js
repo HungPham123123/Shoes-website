@@ -490,10 +490,10 @@ function HomePage() {
 
                     <div className="col-md-4">
                         <div className="relative-blog-homepage">
-                        <a href="Shoes/volleyball.html" className="homepage-blog-img">
-                            <img style={{ width: '100%', marginBottom: '20px' }} src="Shoes/IMAGES/Home_Page_Picture/blog3.webp" alt=""/>
+                        <a href="Shoes/basketball.html" className="homepage-blog-img">
+                            <img style={{ width: '100%', marginBottom: '20px' }} src="Shoes/IMAGES/Home_Page_Picture/blog3.webp" alt="" />
                         </a>
-                        <div className="blog-date">
+                        <div className="blog-date" >
                             <span className="day">04</span>
                             <hr/>
                             <span className="month">AUG</span>
@@ -501,14 +501,15 @@ function HomePage() {
                         </div>
                         
                         <div className="homepage-blog-content">
-                            <a href="blog.html" className="blog-cate">
+                            <a href="Shoes/blog.html" className="blog-cate">
                                 <h5>News</h5>
                             </a>
                     
-                            <a href="Shoes/volleyball.html" className="homepage-blog-title">
-                                <h4 style={{ fontSize: '22px' }}>A GREAT VOLLEYBALL SHOES</h4>
+                            <a href="Shoes/basketball.html" className="homepage-blog-title">
+                                <h4 style={{ fontSize: '22px' }}>DO BASKETBALL SHOES MAKE YOU JUMP HIGHER?</h4>
                             </a>
-                        <p className="blog-short">Best Volleyball Shoes for Setters The setters in a volleyball game are considered the leads of the team. They decide who gets...</p>
+                
+                        <p className="blog-short">Today I want to talk about a topic that some people bring up from time to time. I want to explain something...</p>
                     </div>
                     </div>
                 </div>
