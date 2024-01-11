@@ -434,8 +434,7 @@ function HomePage() {
             <div className="container container-homepage">
                 <h3 className="blog-title" style={{ marginBottom: '50px' }}>OUR BLOGS</h3>
                 <div className="row">
-                    <div className="col-md-4git add .
-">
+                    <div className="col-md-4">
                         <div className="relative-blog-homepage">
                         <a href="Shoes/Running.html" className="homepage-blog-img">
                             <img style={{ width: '100%', marginBottom: '20px' }} src="Shoes/IMAGES/Home_Page_Picture/blog1.webp" alt=""/>
