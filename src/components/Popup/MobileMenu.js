@@ -1,5 +1,6 @@
 import React from "react";
 import './MobileMenu.css';
+import { Link } from 'react-router-dom';
 const MiniMenu = ({ MenuOpen, MenuClose }) => {
     const handleOverlayClick = () => {
         if (MenuOpen) {
@@ -28,20 +29,20 @@ return(
             <div className="sidemenu-content">
                 <div className="menu-section">
                     <div className="menu-list">
-                        <a href="index.html">HOME</a>
+                        <Link to="/Shoes-website">HOME</Link>
                     </div>
                     <div className="menu-list">
-                        <a href="product.html">SHOP</a>
+                        <Link to="/product">SHOP</Link>
                     </div>
                     <div className="menu-list">
-                        <a href="aboutus.html">ABOUT US</a>
+                        <Link to="/aboutus">ABOUT US</Link>
                     </div>
 
                     <div className="menu-list">
-                        <a href="blog.html">BLOG</a>
+                        <Link to="/blog">BLOG</Link>
                     </div>
                     <div className="menu-list">
-                        <a href="contact.html">CONTACT US</a>
+                        <Link to="/contact">CONTACT US</Link>
                     </div>
 
                 </div>

@@ -51,7 +51,7 @@ html, body {
 .slick-dots {
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 65%;
     transform: translate(-65%, 80px);
     display: flex !important;
     align-items: center;
@@ -517,10 +517,6 @@ html, body {
     color: #83868c;
     font-size: 16px;
 
-}
-
-.relative-blog-homepage {
-    position: relative;
 }
 
 .blog-date {

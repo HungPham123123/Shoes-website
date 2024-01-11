@@ -1,17 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
-import Footer from './components/Footer/Footer';
 import HomePage from './components/Pages/homepage';
-import Header from './components/Header/Header';
+import AboutUs from './components/Pages/aboutus';
+import ProductPage from './components/Pages/product';
+import ContactUs from './components/Pages/contact';
+import Blog from './components/Pages/blog';
+import { Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-    <Header />
-    <HomePage />
-    <Footer />
-
-  </div>
+    <div>
+      <Routes>
+        <Route path="/Shoes-website" element={<HomePage />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/product" element={<ProductPage />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/blog" element={<Blog />} />
+        {/* Add other routes as needed */}
+      </Routes>
+    </div>
   );
 }
 

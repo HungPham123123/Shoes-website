@@ -3,6 +3,8 @@ import  './Header.css';
 import Sidecart from '../Popup/sidecart';
 import SearchBar from '../Popup/SearchBar';
 import MiniMenu from '../Popup/MobileMenu';
+import { Link } from 'react-router-dom';
+
 
 function Header() {
     const [isSidecartOpen, setSidecartOpen] = useState(false);
@@ -42,7 +44,7 @@ function Header() {
                 <div className="container container-header">
                     <div className="row header-row">
                         <div className="col-md-2 header-1">
-                            <a className="header-logo" href="index.html">WALKZ</a>
+                            <Link className="header-logo" to="/Shoes-website">WALKZ</Link>
 
                             <div id="icon-navbar" className="icon-navbar" onClick={handleOpenMenu}>
                                 <span></span>
@@ -52,11 +54,12 @@ function Header() {
                         </div>
                         <div className="col-md-8 header-2" style={{ justifyContent: 'center', textAlign: 'center' }}>
                             <ul className="nav-item-box">
-                                <li className="nav-item"><a href="index.html" className="underline">Home</a></li>
-                                <li className="nav-item"><a href="product.html" className="underline">shop</a></li>
-                                <li className="nav-item"><a href="aboutus.html" className="underline">about us</a></li>
-                                <li className="nav-item"><a href="blog.html" className="underline">Blog</a></li>
-                                <li className="nav-item"><a href="contact.html" className="underline">contact us</a></li>
+                                <li className="nav-item"><Link to="/Shoes-website" className="underline">Home</Link></li>
+                                <li className="nav-item"><Link to="/product" className="underline">Shop</Link></li>
+                                <li className="nav-item"><Link to="/aboutus" className="underline">About Us</Link></li>
+                                <li className="nav-item"><Link to="/blog" className="underline">Blog</Link></li>
+                                <li className="nav-item"><Link to="/contact" className="underline">Contact Us</Link></li>
+
                             </ul>
                             <div className="header-small-content">
                                 <a style={{ display: 'none' }} className="header-logo-smaller" href="index.html">WALKZ</a>

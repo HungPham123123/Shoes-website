@@ -1,496 +1,18 @@
 //import logo from './logo.svg';
 import '../../App.css';
-import Footer from '../Footer/Footer';
 import './homepage.css';
+import SlickSlider from '../animation/slickslider';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 function HomePage() {
   return (
     <div>
-   
+        <Header />
 
     <div className="section">
-        <div className="motivation-product hidden">
-            <div className="container  ">
-                <h3 className="motivation-title">MOTIVATION</h3>
-
-                <div className="row product-row image-slider">
-
-                    <div className="product-box">
-                        <div className="product">
-                            <div className="img-product">
-                                <a href="">
-                                    <img style={{ width: '100%' }} src="Shoes/IMAGES/Home_Page_Picture/shoes1.webp" alt=""/>
-                                </a>
-
-                                <figure style={{ background: '#e12c43', color: '#ffffff' }} className="label-sale">
-                                    <span>-20%</span>
-                                </figure>
-
-                                <ul className="product-icon">
-                                    <li className="add-cart mr-0">
-                                        <a href="">
-                                            <i className="fa-solid fa-bag-shopping icon-1"></i>
-                                        </a>
-                                    </li>
-                                  <li className="view-product mr-0">
-                                        <button onclick="togglePopup()" href="">
-                                            <i className="fa-solid fa-magnifying-glass icon-2"></i>
-                                        </button>
-                                    </li>
-                                    <li className="add-favorite mr-0">
-                                        <a href="">
-                                            <i className="fa-regular fa-heart icon-3"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h4 className="product-title">
-                                <a href="">Aero Wave 19</a>
-                            </h4>
-                            <p className="product-price">
-                                <s className="">$156.00</s>
-                                <span className="">$124.95</span>
-                            </p>
-                        </div>  
-                    </div>
-
-                    <div className="product-box">
-                        <div className="product">
-                            <div className="img-product">
-                                <a href="">
-                                    <img style={{ width: '100%' }} src="Shoes/IMAGES/Home_Page_Picture/shoes 3.webp" alt=""/>
-                                </a>
-
-                                <figure style={{ background: '#e12c43', color: '#ffffff' }} className="label-sale">
-                                    <span>-21%</span>
-                                </figure>
-
-                                <ul className="product-icon">
-                                    <li className="add-cart mr-0">
-                                        <a href="">
-                                            <i className="fa-solid fa-bag-shopping icon-1"></i>
-                                        </a>
-                                    </li>
-                                    <li className="view-product mr-0">
-                                        <button onclick="togglePopup()" href="">
-                                            <i className="fa-solid fa-magnifying-glass icon-2"></i>
-                                        </button>
-                                    </li>
-                                    <li className="add-favorite mr-0">
-                                        <a href="">
-                                            <i className="fa-regular fa-heart icon-3"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h4 className="product-title">
-                                <a href="">On Cloudflyer Men</a>
-                            </h4>
-                            <p className="product-price">
-                                <s className="">$213.00</s>
-                                <span className="">$169.95</span>
-                            </p>
-                        </div>  
-                    </div>
-                    
-                    <div className="product-box">
-                        <div className="product">
-                            <div className="img-product">
-                                <a href="">
-                                <img style={{ width: '100%' }} src="./Shoes/IMAGES/Home_Page_Picture/Shoes 4.webp" alt="" />
-                                </a>
-
-                                <figure style={{ background: '#e12c43', color: '#ffffff' }} className="label-sale">
-                                    <span>-20%</span>
-                                </figure>
-
-                                <ul className="product-icon">
-                                    <li className="add-cart mr-0">
-                                        <a href="">
-                                            <i className="fa-solid fa-bag-shopping icon-1"></i>
-                                        </a>
-                                    </li>
-                                    <li className="view-product mr-0">
-                                        <button onclick="togglePopup()" href="">
-                                            <i className="fa-solid fa-magnifying-glass icon-2"></i>
-                                        </button>
-                                    </li>
-                                    <li className="add-favorite mr-0">
-                                        <a href="">
-                                            <i className="fa-regular fa-heart icon-3"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h4 className="product-title">
-                                <a href="">Triumph 19 Women</a>
-                            </h4>
-                            <p className="product-price">
-                                <s className="">$215.00</s>
-                                <span className="">$169.95</span>
-                            </p>
-                        </div>  
-                    </div>
-                    
-                    <div className="product-box">
-                        <div className="product">
-                            <div className="img-product">
-                                <a href="">
-                                    <img style={{ width: '100%' }}src="Shoes/IMAGES/Home_Page_Picture/shoes2.webp" alt=""/>
-                                </a>
-
-                                <figure style={{ background: '#e12c43', color: '#ffffff' }} className="label-sale">
-                                    <span>-34%</span>
-                                </figure>
-
-                                <ul className="product-icon">
-                                    <li className="add-cart mr-0">
-                                        <a href="">
-                                            <i className="fa-solid fa-bag-shopping icon-1"></i>
-                                        </a>
-                                    </li>
-                                    <li className="view-product mr-0">
-                                        <button onclick="togglePopup()" href="">
-                                            <i className="fa-solid fa-magnifying-glass icon-2"></i>
-                                        </button>
-                                    </li>
-                                    <li className="add-favorite mr-0">
-                                        <a href="">
-                                            <i className="fa-regular fa-heart icon-3"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h4 className="product-title">
-                                <a href="">Vapor Cage 4</a>
-                            </h4>
-                            <p className="product-price">
-                                <s className="">$135.00</s>
-                                <span className="">$90.00</span>
-                            </p>
-                        </div>  
-                    </div>
-
-                    <div className="product-box">
-                        <div className="product">
-                            <div className="img-product">
-                                <a href="">
-                                    <img style={{ width: '100%' }} src="Shoes/IMAGES/Home_Page_Picture/shoes1.webp" alt=""/>
-                                </a>
-
-                                <figure style={{ background: '#e12c43', color: '#ffffff' }} className="label-sale">
-                                    <span>-20%</span>
-                                </figure>
-
-                                <ul className="product-icon">
-                                    <li className="add-cart mr-0">
-                                        <a href="">
-                                            <i className="fa-solid fa-bag-shopping icon-1"></i>
-                                        </a>
-                                    </li>
-                                    <li className="view-product mr-0">
-                                        <button onclick="togglePopup()" href="">
-                                            <i className="fa-solid fa-magnifying-glass icon-2"></i>
-                                        </button>
-                                    </li>
-                                    <li className="add-favorite mr-0">
-                                        <a href="">
-                                            <i className="fa-regular fa-heart icon-3"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h4 className="product-title">
-                                <a href="">Aero Wave 19</a>
-                            </h4>
-                            <p className="product-price">
-                                <s className="">$156.00</s>
-                                <span className="">$124.95</span>
-                            </p>
-                        </div>  
-                    </div>
-
-                    <div className="product-box">
-                        <div className="product">
-                            <div className="img-product">
-                                <a href="">
-                                    <img style={{ width: '100%' }} src="Shoes/IMAGES/Home_Page_Picture/shoes 3.webp" alt=""/>
-                                </a>
-
-                                <figure style={{ background: '#e12c43', color: '#ffffff' }} className="label-sale">
-                                    <span>-21%</span>
-                                </figure>
-
-                                <ul className="product-icon">
-                                    <li className="add-cart mr-0">
-                                        <a href="">
-                                            <i className="fa-solid fa-bag-shopping icon-1"></i>
-                                        </a>
-                                    </li>
-                                    <li className="view-product mr-0">
-                                        <button onclick="togglePopup()" href="">
-                                            <i className="fa-solid fa-magnifying-glass icon-2"></i>
-                                        </button>
-                                    </li>
-                                    <li className="add-favorite mr-0">
-                                        <a href="">
-                                            <i className="fa-regular fa-heart icon-3"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h4 className="product-title">
-                                <a href="">On Cloudflyer Men</a>
-                            </h4>
-                            <p className="product-price">
-                                <s className="">$213.00</s>
-                                <span className="">$169.95</span>
-                            </p>
-                        </div>  
-                    </div>
-                    
-                    <div className="product-box">
-                        <div className="product">
-                            <div className="img-product">
-                                <a href="">
-                                    <img style={{ width: '100%' }} src="Shoes/IMAGES/Home_Page_Picture/shoes1.webp" alt=""/>
-                                </a>
-
-                                <figure style={{ background: '#e12c43', color: '#ffffff' }} className="label-sale">
-                                    <span>-20%</span>
-                                </figure>
-
-                                <ul className="product-icon">
-                                    <li className="add-cart mr-0">
-                                        <a href="">
-                                            <i className="fa-solid fa-bag-shopping icon-1"></i>
-                                        </a>
-                                    </li>
-                                  <li className="view-product mr-0">
-                                        <button onclick="togglePopup()" href="">
-                                            <i className="fa-solid fa-magnifying-glass icon-2"></i>
-                                        </button>
-                                    </li>
-                                    <li className="add-favorite mr-0">
-                                        <a href="">
-                                            <i className="fa-regular fa-heart icon-3"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h4 className="product-title">
-                                <a href="">Aero Wave 19</a>
-                            </h4>
-                            <p className="product-price">
-                                <s className="">$156.00</s>
-                                <span className="">$124.95</span>
-                            </p>
-                        </div>  
-                    </div>
-
-                    <div className="product-box">
-                        <div className="product">
-                            <div className="img-product">
-                                <a href="">
-                                    <img style={{ width: '100%' }} src="Shoes/IMAGES/Home_Page_Picture/shoes 3.webp" alt=""/>
-                                </a>
-
-                                <figure style={{ background: '#e12c43', color: '#ffffff' }} className="label-sale">
-                                    <span>-21%</span>
-                                </figure>
-
-                                <ul className="product-icon">
-                                    <li className="add-cart mr-0">
-                                        <a href="">
-                                            <i className="fa-solid fa-bag-shopping icon-1"></i>
-                                        </a>
-                                    </li>
-                                    <li className="view-product mr-0">
-                                        <button onclick="togglePopup()" href="">
-                                            <i className="fa-solid fa-magnifying-glass icon-2"></i>
-                                        </button>
-                                    </li>
-                                    <li className="add-favorite mr-0">
-                                        <a href="">
-                                            <i className="fa-regular fa-heart icon-3"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h4 className="product-title">
-                                <a href="">On Cloudflyer Men</a>
-                            </h4>
-                            <p className="product-price">
-                                <s className="">$213.00</s>
-                                <span className="">$169.95</span>
-                            </p>
-                        </div>  
-                    </div>
-                    
-                    <div className="product-box">
-                        <div className="product">
-                            <div className="img-product">
-                                <a href="">
-                                    <img style={{ width: '100%' }} src="Shoes/IMAGES/Home_Page_Picture/shoes 4.webp" alt=""/>
-                                </a>
-
-                                <figure style={{ background: '#e12c43', color: '#ffffff' }} className="label-sale">
-                                    <span>-20%</span>
-                                </figure>
-
-                                <ul className="product-icon">
-                                    <li className="add-cart mr-0">
-                                        <a href="">
-                                            <i className="fa-solid fa-bag-shopping icon-1"></i>
-                                        </a>
-                                    </li>
-                                    <li className="view-product mr-0">
-                                        <button onclick="togglePopup()" href="">
-                                            <i className="fa-solid fa-magnifying-glass icon-2"></i>
-                                        </button>
-                                    </li>
-                                    <li className="add-favorite mr-0">
-                                        <a href="">
-                                            <i className="fa-regular fa-heart icon-3"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h4 className="product-title">
-                                <a href="">Triumph 19 Women</a>
-                            </h4>
-                            <p className="product-price">
-                                <s className="">$215.00</s>
-                                <span className="">$169.95</span>
-                            </p>
-                        </div>  
-                    </div>
-                    
-                    <div className="product-box">
-                        <div className="product">
-                            <div className="img-product">
-                                <a href="">
-                                    <img style={{ width: '100%' }} src="Shoes/IMAGES/Home_Page_Picture/shoes2.webp" alt=""/>
-                                </a>
-
-                                <figure style={{ background: '#e12c43', color: '#ffffff' }} className="label-sale">
-                                    <span>-34%</span>
-                                </figure>
-
-                                <ul className="product-icon">
-                                    <li className="add-cart mr-0">
-                                        <a href="">
-                                            <i className="fa-solid fa-bag-shopping icon-1"></i>
-                                        </a>
-                                    </li>
-                                    <li className="view-product mr-0">
-                                        <button onclick="togglePopup()" href="">
-                                            <i className="fa-solid fa-magnifying-glass icon-2"></i>
-                                        </button>
-                                    </li>
-                                    <li className="add-favorite mr-0">
-                                        <a href="">
-                                            <i className="fa-regular fa-heart icon-3"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h4 className="product-title">
-                                <a href="">Vapor Cage 4</a>
-                            </h4>
-                            <p className="product-price">
-                                <s className="">$135.00</s>
-                                <span className="">$90.00</span>
-                            </p>
-                        </div>  
-                    </div>
-
-                    <div className="product-box">
-                        <div className="product">
-                            <div className="img-product">
-                                <a href="">
-                                    <img style={{ width: '100%' }} src="Shoes/IMAGES/Home_Page_Picture/shoes1.webp" alt=""/>
-                                </a>
-
-                                <figure style={{ background: '#e12c43', color: '#ffffff' }} className="label-sale">
-                                    <span>-20%</span>
-                                </figure>
-
-                                <ul className="product-icon">
-                                    <li className="add-cart mr-0">
-                                        <a href="">
-                                            <i className="fa-solid fa-bag-shopping icon-1"></i>
-                                        </a>
-                                    </li>
-                                    <li className="view-product mr-0">
-                                        <button onclick="togglePopup()" href="">
-                                            <i className="fa-solid fa-magnifying-glass icon-2"></i>
-                                        </button>
-                                    </li>
-                                    <li className="add-favorite mr-0">
-                                        <a href="">
-                                            <i className="fa-regular fa-heart icon-3"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h4 className="product-title">
-                                <a href="">Aero Wave 19</a>
-                            </h4>
-                            <p className="product-price">
-                                <s className="">$156.00</s>
-                                <span className="">$124.95</span>
-                            </p>
-                        </div>  
-                    </div>
-
-                    <div className="product-box">
-                        <div className="product">
-                            <div className="img-product">
-                                <a href="">
-                                    <img style={{ width: '100%' }} src="Shoes/IMAGES/Home_Page_Picture/shoes 3.webp" alt=""/>
-                                </a>
-
-                                <figure style={{ background: '#e12c43', color: '#ffffff' }} className="label-sale">
-                                    <span>-21%</span>
-                                </figure>
-
-                                <ul className="product-icon">
-                                    <li className="add-cart mr-0">
-                                        <a href="">
-                                            <i className="fa-solid fa-bag-shopping icon-1"></i>
-                                        </a>
-                                    </li>
-                                    <li className="view-product mr-0">
-                                        <button onclick="togglePopup()" href="">
-                                            <i className="fa-solid fa-magnifying-glass icon-2"></i>
-                                        </button>
-                                    </li>
-                                    <li className="add-favorite mr-0">
-                                        <a href="">
-                                            <i className="fa-regular fa-heart icon-3"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h4 className="product-title">
-                                <a href="">On Cloudflyer Men</a>
-                            </h4>
-                            <p className="product-price">
-                                <s className="">$213.00</s>
-                                <span className="">$169.95</span>
-                            </p>
-                        </div>  
-                    </div>
-
-                    
-                    
-
-
-                </div>
-            </div>
-        </div>
-
+        
+    <SlickSlider />
 
 
         <div style={{ marginTop: '150px' }} className="sport-banner-section hidden">
@@ -912,10 +434,18 @@ function HomePage() {
             <div className="container container-homepage">
                 <h3 className="blog-title" style={{ marginBottom: '50px' }}>OUR BLOGS</h3>
                 <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-md-4git add .
+">
+                        <div className="relative-blog-homepage">
                         <a href="Shoes/Running.html" className="homepage-blog-img">
                             <img style={{ width: '100%', marginBottom: '20px' }} src="Shoes/IMAGES/Home_Page_Picture/blog1.webp" alt=""/>
                         </a>
+                        <div className="blog-date">
+                            <span className="day">10</span>
+                            <hr/>
+                            <span className="month">AUG</span>
+                        </div>
+                        </div>
                         <div className="blog-date">
                             <span className="day">10</span>
                             <hr/>
@@ -934,6 +464,7 @@ function HomePage() {
                     </div>
 
                     <div className="col-md-4">
+                        <div className="relative-blog-homepage">
                         <a href="Shoes/basketball.html" className="homepage-blog-img">
                             <img style={{ width: '100%', marginBottom: '20px' }} src="Shoes/IMAGES/Home_Page_Picture/blog2.webp" alt="" />
                         </a>
@@ -942,6 +473,8 @@ function HomePage() {
                             <hr/>
                             <span className="month">AUG</span>
                         </div>
+                        </div>
+                        
                         <div className="homepage-blog-content">
                             <a href="Shoes/blog.html" className="blog-cate">
                                 <h5>News</h5>
@@ -956,6 +489,7 @@ function HomePage() {
                     </div>
 
                     <div className="col-md-4">
+                        <div className="relative-blog-homepage">
                         <a href="Shoes/volleyball.html" className="homepage-blog-img">
                             <img style={{ width: '100%', marginBottom: '20px' }} src="Shoes/IMAGES/Home_Page_Picture/blog3.webp" alt=""/>
                         </a>
@@ -964,6 +498,8 @@ function HomePage() {
                             <hr/>
                             <span className="month">AUG</span>
                         </div>
+                        </div>
+                        
                         <div className="homepage-blog-content">
                             <a href="blog.html" className="blog-cate">
                                 <h5>News</h5>
@@ -1073,7 +609,7 @@ function HomePage() {
           <i className="fa-solid fa-arrow-up"></i>
         </div>
 
- 
+        <Footer />
 </div>
   );
 }
