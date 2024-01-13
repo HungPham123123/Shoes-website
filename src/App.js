@@ -15,7 +15,6 @@ function App() {
         <Route path="/product" element={<ProductPage />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/blog" element={<Blog />} />
-        {/* Add other routes as needed */}
       </Routes>
     </div>
   );
